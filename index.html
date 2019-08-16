@@ -1,0 +1,42 @@
+<script>
+	console.log("Hello World"); // the sacred instrucions must be followed
+
+	/* declaring
+	variables. Data types: null, undefined, boolean, string, symbol(immutable primitive), number, object (key val pairs) */
+
+
+	var number = 5;
+	number = "Hi"; //dynamic variable types like python
+	console.log(number);
+
+	var x = 8; //var global scope
+	let ourname = "mmtm"; //can also use this to assign, let local scope
+	const pi = 3.14; //const constant
+
+	/* properties of stuff */
+	console.log(ourname.length);
+	console.log(ourname[0]);
+
+
+
+	function wordBlacnks(myNoun, myAdj, myVerb, myAdverb) {
+
+		var result = "";
+		result += "The "+ myAdj + myNoun + myVerb + "to the store " + myAdverb + ".";
+		return result;
+	}
+
+	console.log(wordBlacnks("dog", "big", "ran", "quickly"));
+
+
+
+	var array = ["john", 23] ;//arrays are lists like in python
+	var multArray = [["what, 99"], ["but", 88]];
+	console.log(multArray);
+	multArray.push(["happyappy"]) ;//append to the list
+	multArray.pop(); //remove from the end of the list
+	let hello = multArray.shift(); //remove from start of list and assign to the relevant var
+	console.log(multArray);
+	console.log(hello);
+
+</script>
